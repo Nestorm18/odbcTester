@@ -1,0 +1,3 @@
+Abrir una terminal CMD
+Iniciar "main.exe -p ruta/to/access.mdb"
+Si salta una excepcion odbc no es correcto, en caso contrario puedes continuar

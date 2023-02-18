@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "odbctester"
+version = "0.1.0"
+description = ""
+authors = ["Traballo <nesdum18@yahoo.es>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pyodbc = "^4.0.35"
+pyinstaller = "^5.8.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
