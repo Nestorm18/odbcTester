@@ -1,4 +1,5 @@
 import argparse
+import sys
 
 from tester import ODBCTester
 
@@ -9,7 +10,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Comprueba que exista odbc valido instalado.',
                                      epilog=desc)
     parser.add_argument('-p', '--path', help='Ruta a archivo .mdb', required=True)
-    args = vars(parser.parse_args())
+    args = vars(parser.parse_args(None if sys.argv[1:] else ['-h']))
 
     if args['path']:
         tester = ODBCTester(args['path'])
